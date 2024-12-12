@@ -10,5 +10,7 @@ module.exports = merge(common, {
     compress: true,
     port: 9000,
     open: true, // Automatically open the browser
+    hot: true, // Make sure HMR is enabled
+    watchFiles: ['src/**/*'], // Watch all files, including CSS
   },
 });

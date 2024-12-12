@@ -1,7 +1,7 @@
 {
   "scripts": {
-    "start": "webpack serve --config webpack.dev.js",  
-    "build": "webpack --config webpack.prod.js"       
+    "start": "webpack serve --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js"
   },
   "devDependencies": {
     "@babel/core": "^7.26.0",
@@ -16,5 +16,8 @@
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^5.1.0",
     "webpack-merge": "^6.0.1"
+  },
+  "dependencies": {
+    "date-fns": "^4.1.0"
   }
 }

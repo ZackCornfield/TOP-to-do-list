@@ -4,20 +4,13 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
   entry: './src/index.js', // Entry point for your app
   output: {
-    filename: 'bundle.js',
+    filename: 'main.js',
     path: path.resolve(__dirname, 'dist'), // Output directory
   },
   module: {
     rules: [
       {
-        test: /\.js$/, // Transpile JavaScript files
-        exclude: /node_modules/,
-        use: {
-          loader: 'babel-loader',
-        },
-      },
-      {
-        test: /\.css$/, // Handle CSS files
+        test: /\.css$/i, // Handle CSS files
         use: ['style-loader', 'css-loader'],
       },
       {
